@@ -48,7 +48,7 @@ export default function AppProvider({
 
   async function traerNotas() {
     try {
-      const { data } = await axios.get(`${process.env.URI}/api/nota/`);
+      const { data } = await axios.get("http://localhost:3000/api/nota/");
       setNotas(data);
     } catch (error) {
       console.log(error);
