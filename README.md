@@ -9,8 +9,6 @@ Proyecto sobre un Editor de Markdown donde se puede realizar las operaciones de 
 
 ![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-![Postgresql](https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white)
-
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Capturas
@@ -20,4 +18,4 @@ Proyecto sobre un Editor de Markdown donde se puede realizar las operaciones de 
 ![Cap2](https://iili.io/JWauOtR.png)
 
 ## Demo
-[Web Site]()
+[Web Site](https://markdowneditor-ferlaxi-production.up.railway.app/)

@@ -57,10 +57,7 @@ export default function AppProvider({
 
   async function crearNota(datos: any) {
     try {
-      const { data } = await axios.post(
-        "/api/nota/",
-        datos
-      );
+      const { data } = await axios.post("/api/nota/", datos);
       setNotas([...notas, data]);
     } catch (error) {
       console.log(error);
@@ -72,12 +69,9 @@ export default function AppProvider({
       if (dato.titulo === "") {
         return;
       }
-      const { data } = await axios.put(
-        `/api/nota/${datosNota.id}`,
-        {
-          titulo: dato.titulo,
-        }
-      );
+      const { data } = await axios.put(`/api/nota/${datosNota.id}`, {
+        titulo: dato.titulo,
+      });
       setNotas(notas.map((nota) => (nota.id === datosNota.id ? data : nota)));
     } catch (error) {
       console.log((error as Error).message);
@@ -98,13 +92,13 @@ export default function AppProvider({
 
   async function actualizarContenido() {
     try {
-      // if (datosNota.id === 3) {
-      //   return;
-      // }
-      const { data } = await axios.put(
-        `/api/nota/${datosNota.id}`,
-        { titulo: datosNota.titulo, contenido: datosNota.contenido }
-      );
+      if (datosNota.id === 3) {
+        return;
+      }
+      const { data } = await axios.put(`/api/nota/${datosNota.id}`, {
+        titulo: datosNota.titulo,
+        contenido: datosNota.contenido,
+      });
       setNotas(notas.map((nota) => (nota.id === datosNota.id ? data : nota)));
     } catch (error) {
       console.log(error);
