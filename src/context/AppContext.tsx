@@ -48,7 +48,7 @@ export default function AppProvider({
 
   async function traerNotas() {
     try {
-      const { data } = await axios.get("http://localhost:3000/api/nota/");
+      const { data } = await axios.get("/api/nota/");
       setNotas(data);
     } catch (error) {
       console.log(error);
@@ -58,7 +58,7 @@ export default function AppProvider({
   async function crearNota(datos: any) {
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/nota/",
+        "/api/nota/",
         datos
       );
       setNotas([...notas, data]);
@@ -73,7 +73,7 @@ export default function AppProvider({
         return;
       }
       const { data } = await axios.put(
-        `http://localhost:3000/api/nota/${datosNota.id}`,
+        `/api/nota/${datosNota.id}`,
         {
           titulo: dato.titulo,
         }
@@ -89,7 +89,7 @@ export default function AppProvider({
       if (datosNota.id === 3) {
         return;
       }
-      await axios.delete(`http://localhost:3000/api/nota/${datosNota.id}`);
+      await axios.delete(`/api/nota/${datosNota.id}`);
       setNotas(notas.filter((nota) => nota.id !== datosNota.id));
     } catch (error) {
       console.log(error);
@@ -102,7 +102,7 @@ export default function AppProvider({
         return;
       }
       const { data } = await axios.put(
-        `http://localhost:3000/api/nota/${datosNota.id}`,
+        `/api/nota/${datosNota.id}`,
         { titulo: datosNota.titulo, contenido: datosNota.contenido }
       );
       setNotas(notas.map((nota) => (nota.id === datosNota.id ? data : nota)));
