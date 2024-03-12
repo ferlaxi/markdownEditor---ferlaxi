@@ -15,9 +15,9 @@ Proyecto sobre un Editor de Markdown donde se puede realizar las operaciones de 
 
 ## Capturas
 
-![Cap1](https://i.postimg.cc/P5hz2pHg/localhost-3000-1440.png)
+![Cap1](https://iili.io/JWauknp.png)
 
-![Cap2](https://i.postimg.cc/dtdcGXQW/localhost-3000-1440-1.png)
+![Cap2](https://iili.io/JWauOtR.png)
 
 ## Demo
 [Web Site]()
