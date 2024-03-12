@@ -33,7 +33,7 @@ export default function NavBar() {
   }
 
   async function traerNotas() {
-    const { data } = await axios(`http://localhost:/api/nota/`);
+    const { data } = await axios(`http://localhost:3000/api/nota/`);
     setDatosNota({
       id: data[0].id,
       titulo: data[0].titulo,
