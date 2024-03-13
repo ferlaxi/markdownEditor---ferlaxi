@@ -92,9 +92,9 @@ export default function AppProvider({
 
   async function actualizarContenido() {
     try {
-      // if (datosNota.id === 3) {
-      //   return;
-      // }
+      if (datosNota.id === 3) {
+        return;
+      }
       const { data } = await axios.put(`/api/nota/${datosNota.id}`, {
         titulo: datosNota.titulo,
         contenido: datosNota.contenido,
