@@ -85,7 +85,7 @@ export default function NavBar() {
             <form onSubmit={onSubmit}>
               {datosNota.titulo === undefined ? (
                 <input
-                  defaultValue={
+                  value={
                     datosNota.titulo ? datosNota.titulo : "Documento"
                   }
                   {...register("titulo")}
@@ -95,7 +95,7 @@ export default function NavBar() {
                 ></input>
               ) : (
                 <input
-                  defaultValue={
+                  value={
                     datosNota.titulo ? datosNota.titulo : "Documento"
                   }
                   {...register("titulo")}
