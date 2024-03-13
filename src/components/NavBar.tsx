@@ -91,7 +91,7 @@ export default function NavBar() {
                   {...register("titulo")}
                   type="text"
                   disabled
-                  className="bg-transparent focus:outline-none focus:border-b-[1px] lg:pr-32 text-white text-[15px] caret-me-orange cursor-pointer"
+                  className="bg-transparent focus:outline-none focus:border-b-[1px] lg:pr-32 md:w-auto w-28 text-white text-[15px] caret-me-orange cursor-pointer"
                 ></input>
               ) : (
                 <input
@@ -100,7 +100,7 @@ export default function NavBar() {
                   }
                   {...register("titulo")}
                   type="text"
-                  className="bg-transparent focus:outline-none focus:border-b-[1px] lg:pr-32 text-white text-[15px] caret-me-orange cursor-pointer"
+                  className="bg-transparent focus:outline-none focus:border-b-[1px] lg:pr-32 md:w-auto w-28 text-white text-[15px] caret-me-orange cursor-pointer"
                 ></input>
               )}
             </form>

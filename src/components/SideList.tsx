@@ -38,7 +38,7 @@ export default function SideList() {
       <div
         className={`${
           close ? "" : "-translate-x-[250px]"
-        } transition-all h-screen bg-me-semidark min-w-[250px] flex flex-col justify-between`}
+        } transition-all md:h-screen h-screen scroll-auto bg-me-semidark min-w-[250px] flex flex-col justify-between`}
       >
         <div className="flex flex-col mx-6 gap-y-5 pt-5">
           <p className="text-me-semidark-light font-medium text-[14px]">
